@@ -56,6 +56,9 @@
     <!-- ios -->
     <platform name="ios">
 
+        <header-file src="src/ios/CDVStatusBar.h" />
+        <source-file src="src/ios/CDVStatusBar.m" />
+      
         <config-file target="config.xml" parent="/*">
             <feature name="StatusBar">
                 <param name="ios-package" value="CDVStatusBar" />
@@ -65,9 +68,6 @@
             <preference name="StatusBarBackgroundColor" value="#000000" />
             <preference name="StatusBarStyle" value="blackTranslucent" />
         </config-file>
-
-        <header-file src="src/ios/CDVStatusBar.h" />
-        <source-file src="src/ios/CDVStatusBar.m" />
 
     </platform>
 
